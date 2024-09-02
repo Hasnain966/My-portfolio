@@ -1,0 +1,207 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    background-image: url(./pic/11.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.red{
+    color: #9ddb2b;
+}
+.logo {
+    font-size: 1.5em;
+    cursor: pointer;
+    color: re;
+}
+
+.burger-menu {
+    display: none;
+    cursor: pointer;
+    font-size: 1.5em;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    margin-left: 400px;
+
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+}
+.click{
+    font-size: 30px;
+    margin-left: 1300px;
+    color: rgba(21, 255, 0, 0.73);
+}
+
+
+.github{
+    color: #ffffffca;
+    font-size: 40px;
+    text-align: center;
+    margin-left: 1200px;
+    border-bottom: 10px solid rgb(255, 0, 0);
+}
+.github-img{
+    width: 100px;
+}
+
+.list li a{
+    color:rgb(0, 0, 0)  ;
+    font-weight: 800;
+    font-size: 30px;
+    border: 3px solid #fff;
+}
+
+.para{
+    color: #ffff00;
+    font-size: 30px;
+}
+
+.img{
+margin-left: 500px;
+width: 600px;
+}
+.nav-links a:hover {
+    color: #aaa8a8de;
+    text-decoration: none;
+}
+
+.home-content {
+    text-align: center;
+    padding: 50px;
+}
+
+.circular-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.circular-image img {
+    width: 100%;
+    height: auto;
+}
+
+.section {
+    display: none;
+    padding: 50px 20px;
+}
+
+.section.active {
+    display: block;
+}
+
+.github-img{
+    width: 20px;
+}
+
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.animated-picture {
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    background-color: #f0f0f0;
+    margin: 0 auto;
+    animation: lighting-border 2s infinite;
+}
+
+@keyframes lighting-border {
+    0% {
+        border-color: #ff0000;
+    }
+    50% {
+        border-color: #000000;
+    }
+    100% {
+        border-color: #5d00ff;
+    }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background-color: #333;
+        width: 200px;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .burger-menu {
+        display: block;
+    }
+
+    .Saylani img {
+        width: 100%;
+    }
+
+    .home-content {
+        padding: 20px;
+    }
+
+    form {
+        width: 90%;
+    }
+}
+
+@media (max-width: 491px) {
+    .nav-links li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .burger-menu {
+        margin-right: 20px;
+    }
+}
